@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+    <%= title %>
+  </title>
+
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/bs-signin.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- displays error messages using connect-flash -->
+  <% for(var i in messages) { %>
+    <div class="flash">
+      <%= messages[i] %>
+    </div>
+  <% } %>
+
+  <div class="container">
+    <form class="form-signin" action="/login" method="post">
+      <h2 class="form-signin-heading text-center">login</h2>
+
+      <label for="username" class="sr-only">username</label>
+      <input type="text" name="username" id="username" class="form-control" placeholder="username" required autofocus>
+
+      <label for="password" class="sr-only">password</label>
+      <input type="password" name="password" id="password" class="form-control" placeholder="password">
+
+      <button class="btn btn-lg btn-primary btn-black" type="submit">login</button>
+    </form>
+  </div>
+</body>
+</html>

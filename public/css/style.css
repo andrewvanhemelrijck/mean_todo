@@ -1,0 +1,84 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 700;
+}
+
+.navbar {
+  text-transform: uppercase;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 700;
+}
+
+.navbar-default .navbar-toggle {
+  border: none;
+}
+
+@media (min-width: 768px) {
+  .navbar-fixed-top {
+    padding: 25px 0;
+    -webkit-transition: padding .3s;
+    -moz-transition: padding .3s;
+    transition: padding .3s;
+  }
+
+  .navbar-fixed-top .navbar-brand {
+    font-size: 2em;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+  }
+
+  .navbar-fixed-top.navbar-shrink {
+    padding: 10px 0;
+  }
+
+  .navbar-fixed-top.navbar-shrink .navbar-brand {
+    font-size: 1.5em;
+  }
+}
+
+.main-section {
+  padding-bottom: 0;
+}
+
+.main-section header:first-of-type,
+section {
+  padding: 75px 0;
+}
+
+@media(max-width:767px) {
+  .main-section header:first-of-type,
+  section {
+    padding: 50px 0;
+  }
+}
+
+section h2 {
+  margin: 0;
+  font-size: 3em;
+}
+
+.todoList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.todoList input {
+  margin: .5em;
+}
+
+.completed,
+.completed a {
+  color: lightgrey;
+  text-decoration: line-through;
+}
+
+.comment {
+  padding-left: 1em;
+}
